@@ -14,6 +14,20 @@
   <a href="https://sitemap.nuxtjs.org">Read Documentation</a>
 </p>
 
+## What I added?
+```
+add extra host params to make dynamic hostname 
+[
+  {
+    url: `/posts/${resource.id}`,
+    host: `https://${resource.subdomain_name}.abc.io/`,
+    lastmod: resource.updated_at,
+  }
+
+]
+```
+
+
 [📖 **Release Notes**](./CHANGELOG.md)
 
 ## License
